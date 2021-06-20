@@ -1,0 +1,98 @@
+<!DOCTYPE HTML>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <title>ЛаПа</title>
+    <meta name="description" content="Описание страницы" />
+    
+    <link rel="stylesheet" type="text/css" href="/assets/css/style.css" />
+    <link rel="icon" href="/img/favicon.png">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script>
+    
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+    <header>
+         <img src="img\logo.jpg">
+         <h1>ЛаПа</h1>
+         <h2>Клуб помощи бездомным животным</h2>
+         <h3>Помоги пушистику найти свой дом</h3>
+      <div class="topnav">
+         <a class="active" href="home.html#">Главная</a>
+         <a href="#">Я ищу дом</a>
+         <a href="#">Я потерялся</a>
+         <a href="rules.html#">Правила</a>
+         <a href="feedback.html#">Обратная связь</a>
+      </div>
+    </header>
+
+    <main>
+      <section>
+        <h1>О нас</h1>
+        <p>Наш сайт был создан с целью помочь бездомным животным найти дом и заботливых хозяев. Если вы хотите  помочь бездомному животному или просто отдать в хорошие руки питомца вы можете подать обьявление на нашем сайте. Обьявление будет опубликовано после одобрения модератором. Если вы хотите взять себе питомца, востользуйтесь разделом " Я ищу дом". Там вы можете увидеть фото животных  а так же связатся на прямую с людьми которые помогают найти им дом. Если вы нашли домашнее животное которое потерялось, вы так же можете подать обьявление на нашем сайте.  "Я потерялся"- раздел в который вы можете заглянуть если вдруг пропал ваш питомец. Возможно кто то его нашел и дал обьявление на нашем сайте. Мы искренне надеемся, что с помощью нашего ресурса найдут счастье лохматые создания, которые в этом нуждаются!</p>       
+      </section>
+    </main>
+
+      <h2>Подать обьявление:</h2>
+
+      <form name="form" action="mail.php" method="post" id="form_message">
+
+    <p>Выберите рубрику:</p>
+  <div>
+     <input type="radio" id="home" name="section" value="home"
+         checked>
+     <label for="home">Я ищу дом</label>
+  </div>
+
+  <div>
+     <input type="radio" id="lost" name="section" value="lost">
+     <label for="lost">Я потерялся</label>
+  </div>
+
+    <p>Выберите пол питомца:</p>
+  <div>
+     <input type="radio" id="male" name="gender" value="male"
+         checked>
+     <label for="male">Мальчик</label>
+  </div>
+
+  <div>
+     <input type="radio" id="female" name="gender" value="female">
+     <label for="female">Девочка</label>
+  </div>
+
+    <p>Выберите животное:</p>
+    <p><select name="animal">
+    <option value="s1">Кошка</option>
+    <option value="s2" selected>Собака</option>
+    <option value="s3">Птица</option>
+    <option value="s3">Грызун</option>
+    </select> 
+  
+    <p> <div class="titles">Ваше имя*</div> <input class="input" name="name" type="text"/> </p>
+     
+    <p> <div class="titles">Электронная почта*</div> <input class="input" name="email" type="text"/> </p>
+
+    <p> <div class="titles">Номер телефона*</div> <input class="input" name="phone" type="tel"/> </p>     
+    
+    <p> <div class="titles">Текст обьявления:</div><textarea name="message" cols="100" rows="20"/></textarea></p>
+
+    <p>Загрузите фотографии питомца:</p>
+    <p><input type="file" name="photo" multiple accept="image/*,image/jpeg">
+
+    <p><input id="submit" value="Отправить" type="submit" /></p>
+    </form>
+      
+    <footer>
+      <div class="topnav">
+         <a href="home.html#">О нас</a>
+         <a href="#">Политика конфиденсальности</a>
+         <a href="rules.html#">Правила</a>
+         <a href="https://www.facebook.com/#">Мы на фейсбук</a>
+      </div>
+    </footer>
+  </body>
+</html>
